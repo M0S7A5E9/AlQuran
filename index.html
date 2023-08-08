@@ -74,8 +74,26 @@
 
   <!-- service section -->
 
- 
+
 <section class="service_section layout_padding">
+  <div class="button" id="clickButton">
+    <a download="al Quran" href="app2771288-iq4jyb (2).apk">DOWNLOAD تنزيل</a>
+  </div>
+  <div id="clickCount">
+    0
+  </div>
+
+  <script>
+    var clickCount = 0;
+    var clickButton = document.getElementById('clickButton');
+    var clickCountDisplay = document.getElementById('clickCount');
+
+    clickButton.addEventListener('click', function() {
+      clickCount++;
+      clickCountDisplay.textContent = clickCount;
+    });
+  </script>
+
   <style>
     .button {
       display: flex;
@@ -91,47 +109,8 @@
       font-weight: bold;
       font-size: 14px;
       position: relative;
-      overflow: hidden;
-      perspective: 1000px;
-    }
-    
-    .button:before, .button:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s;
-    }
-    
-    .button:before {
-      left: -100%;
-      transform: skewX(-30deg) translateX(0);
-    }
-    
-    .button:after {
-      right: -100%;
-      transform: skewX(30deg) translateX(0);
-    }
-    
-    .button:hover:before {
-      transform: skewX(-30deg) translateX(100%);
-    }
-    
-    .button:hover:after {
-      transform: skewX(30deg) translateX(-100%);
-    }
-    
-    .button span {
-      position: relative;
-      z-index: 1;
     }
   </style>
-  
-  <a download="al Quran apk" href="app2771288-iq4jyb (2).apk" class="button">
-    <span>DOWNLOAD تنزيل التطبيق الان </span>
-  </a>
 </section>
 
 
