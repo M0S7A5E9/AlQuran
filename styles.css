@@ -93,7 +93,7 @@ h6 {
 }
 
 a {
-	color: #f1f1f8;
+	color: #red;
 	text-decoration: underline;
 }
 
@@ -107,7 +107,7 @@ a.turquoise {
 }
 
 a.white {
-	color: #fff;
+	color: #red;
 }
 
 .testimonial-text {
